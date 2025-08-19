@@ -1,0 +1,63 @@
+---
+title: "myGUI"
+fontsize: 12pt
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
+    fig_caption: yes
+  
+date: "2025-08-17"
+---
+
+# Formål
+
++ Kende de grundlæggende begreber i PySide6 og Qt Designer.
++ Forstå og kunne anvende MVC-strukturen i små grogrammer. 
++ Lære at bygge en GUI, der adskiller data logik (model), brugergrænseflade (view) og kontrol logik (controller)
+
+# Hjemmeside, link og videoer
+
++ [PySide6 præsentation](https://github.com/Vibenshus-Gymnasium-Programmering/PySide6_praesentationer/blob/main/01_Opsaetning_og_de_foerste_programmer/01_Opsaetning_og_de_foerste_programmer.org)
+
++ [Tutorials](https://www.pythonguis.com/tutorials/pyside6-creating-your-first-window/)
+
++ [MVC](https://openclassrooms.com/en/courses/6900866-write-maintainable-python-code/7009312-structure-an-application-with-the-mvc-design-pattern)
+
+
+# Centrale begreber
+
++ Widgets:
++ Signals & Slots:
++ Event & event handler:
++ MVC-strukture:
+  + Model
+  + View
+  + Controller
+
+
+# Introduktion til PySide6
+
++ GUI 
++ Signals/slots
++ Event
+
+
+## Do it yourself
+
++ Download og installér PySide6 og Qt Designer (i en venv og ny github repository)
++ Gennemgår tutorials i linket [PySide6 Signals, Slots & Events](https://www.pythonguis.com/tutorials/pyside6-signals-slots-events/)
+
+
+
+# Opgave
+
++ [Andengradsligningsløser](https://github.com/Vibenshus-Gymnasium-Programmering/PySide6_andengradsligningsloeser)
+
+
+
+
+
+
+
