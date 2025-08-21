@@ -19,6 +19,7 @@ class MainWindow(QMainWindow):
         context.addAction(QAction("test 3", self))
         context.exec(self.mapToGlobal(pos))
 
+
 app = QApplication(sys.argv)
 
 window = MainWindow()
