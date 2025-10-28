@@ -13,10 +13,12 @@ DEFAULT_STATE = "---------"
 
 
 class TicTacToe(QWidget):
+
+    turn_number = 0
     def __init__(self, parent=None):
         super().__init__(parent)
         self._state = DEFAULT_STATE
-        self._turn_number = 0
+        # self._turn_number = 0
 
     def minimumSizeHint(self):
         return QSize(200, 200)
@@ -25,12 +27,12 @@ class TicTacToe(QWidget):
         return QSize(200, 200)
 
     def setState(self, new_state):
-        self._turn_number = 0
+        self.turn_number = 0
         self._state = DEFAULT_STATE
         for position in range(min(9, len(new_state))):
             mark = new_state[position]
             if mark == CROSS or mark == NOUGHT:
-                self._turn_number += 1
+                self.turn_number += 1
                 self._change_state_at(position, mark)
             position += 1
         self.update()
@@ -41,7 +43,7 @@ class TicTacToe(QWidget):
     @Slot()
     def clear_board(self):
         self._state = DEFAULT_STATE
-        self._turn_number = 0
+        turn_number = 0
         self.update()
 
     def _change_state_at(self, pos, new_state):
@@ -49,16 +51,16 @@ class TicTacToe(QWidget):
                        + self._state[pos + 1:])
 
     def mousePressEvent(self, event):
-        if self._turn_number == 9:
+        if self.__class__.turn_number == 81:
             self.clear_board()
             return
         for position in range(9):
             cell = self._cell_rect(position)
             if cell.contains(event.position().toPoint()):
                 if self._state[position] == EMPTY:
-                    new_state = CROSS if self._turn_number % 2 == 0 else NOUGHT
+                    new_state = CROSS if self.__class__.turn_number % 2 == 0 else NOUGHT
                     self._change_state_at(position, new_state)
-                    self._turn_number += 1
+                    self.__class__.turn_number += 1
                     self.update()
 
     def paintEvent(self, event):
@@ -93,7 +95,7 @@ class TicTacToe(QWidget):
                     and self._state[position + 2] == self._state[position]):
                     y = self._cell_rect(position).center().y()
                     painter.drawLine(0, y, self.width(), y)
-                    self._turn_number = 9
+                    #self._turn_number = 9
 
             for position in range(3):
                 if (self._state[position] != EMPTY
@@ -101,17 +103,17 @@ class TicTacToe(QWidget):
                     and self._state[position + 6] == self._state[position]):
                     x = self._cell_rect(position).center().x()
                     painter.drawLine(x, 0, x, self.height())
-                    self._turn_number = 9
+                    #self._turn_number = 9
 
             if (self._state[0] != EMPTY and self._state[4] == self._state[0]
                 and self._state[8] == self._state[0]):
                 painter.drawLine(0, 0, self.width(), self.height())
-                self._turn_number = 9
+                #self._turn_number = 9
 
             if (self._state[2] != EMPTY and self._state[4] == self._state[2]
                 and self._state[6] == self._state[2]):
                 painter.drawLine(0, self.height(), self.width(), 0)
-                self._turn_number = 9
+                #self._turn_number = 9
 
     def _cell_rect(self, position):
         h_margin = self.width() / 30
