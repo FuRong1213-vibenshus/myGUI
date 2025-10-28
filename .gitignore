@@ -1,3 +1,4 @@
 .myGUI_venv/
 .Rproj.user
 *.py
+__pycache__/

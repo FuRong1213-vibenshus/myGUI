@@ -2,3 +2,73 @@
 # myGUI
 
 
+# Formål
+
++ Kende de grundlæggende begreber i PySide6 og Qt Designer.
++ Forstå og kunne anvende MVC-strukturen i små grogrammer. 
++ Lære at bygge en GUI, der adskiller data logik (model), brugergrænseflade (view) og kontrol logik (controller)
+
+# Hjemmeside, link og videoer
+
++ [PySide6 præsentation](https://github.com/Vibenshus-Gymnasium-Programmering/PySide6_praesentationer/blob/main/01_Opsaetning_og_de_foerste_programmer/01_Opsaetning_og_de_foerste_programmer.org)
+
++ [qtdesigner](https://github.com/Vibenshus-Gymnasium-Programmering/PySide6_praesentationer/blob/main/02_QtDesigner/02_QtDesigner.org)
+
++ [Tutorials](https://www.pythonguis.com/tutorials/pyside6-creating-your-first-window/)
+
++ [MVC](https://openclassrooms.com/en/courses/6900866-write-maintainable-python-code/7009312-structure-an-application-with-the-mvc-design-pattern)
+
+
+# Centrale begreber
+
++ Widgets:
++ Signals & Slots:
++ Event & event handler:
++ MVC-strukture:
+  + Model
+  + View
+  + Controller
+
+
+# Introduktion til PySide6
+
++ GUI og Widget 
++ Signals/slots
++ Event
+
+# Qt Widgets Designer
+
+https://www.pythonguis.com/tutorials/pyside6-qt-designer-gui-layout/
+
+## Do it yourself
+
++ Download og installér PySide6 og Qt Designer (i en venv og ny github repository)
++ Gennemgår tutorials i emnet
+  + [PySide6 Signals, Slots & Events](https://www.pythonguis.com/tutorials/pyside6-signals-slots-events/)
+  + [PySide6 Widgets](https://www.pythonguis.com/tutorials/pyside6-widgets/)
+  + [PySide6 Layout](https://www.pythonguis.com/tutorials/pyside6-layouts/)
+  + [PySide6 Menus](https://www.pythonguis.com/tutorials/pyside6-actions-toolbars-menus/)
+
+
+
+# Opgave
+
+Alle opgaverne findes i github classroom, man kan starte opgaven ved at trykke på linket og acceptere det. 
+
+
++ Andengradsligningsløser
+
+    https://github.com/Vibenshus-Gymnasium-Programmering/PySide6_andengradsligningsloeser
+
++ Roeversprogsoversaetter
+  
+  https://classroom.github.com/a/12MjAaIT
+
++ Kryds og Bolle
+
+    https://classroom.github.com/a/vYUFVYlN
+
+
+
+
+
